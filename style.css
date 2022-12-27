@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 body {
@@ -36,19 +36,11 @@ p {
   cursor: pointer;
 }
 
-.nft-img:hover {
-  cursor: pointer;
-  z-index: -1;
-  background-image: url("/images/icon-view.svg"),
-    url("./images/image-equilibrium.jpg");
-}
-
 .card-component {
   max-width: 20rem;
   padding: 1.6rem;
   background-color: hsl(216, 50%, 16%);
   border-radius: 12px;
-  overflow: hidden;
 }
 
 .card-text {
@@ -60,6 +52,31 @@ p {
 .nft-img {
   max-width: 100%;
   border-radius: 12px;
+  display: block;
+}
+
+.image-section {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsla(178, 100%, 50%, 0.696);
+  border-radius: 10px;
+}
+
+.overly-icon {
+  transform: translate(8.5rem, 8.5rem);
+}
+
+.image-section:hover .overlay {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .sell-info {
@@ -86,14 +103,14 @@ p {
 
 .seller-info {
   border-top: solid 1px hsl(215, 32%, 27%);
-  padding-top: 1.6rem;
+  padding-top: 1.2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 .seller-info p {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -112,6 +129,31 @@ p {
 /* Queries *
 /* ************************************************* */
 
-/* above 375px */
+/* above 450px */
 @media (min-width: 28.125em) {
+  .card-component {
+    max-width: 24rem;
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .card-text {
+    gap: 1.2rem;
+  }
+
+  .seller-info p {
+    font-size: 1.1rem;
+  }
+
+  .seller-info {
+    padding-top: 1.6rem;
+  }
 }
