@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  margin: 12px;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.link-hover:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.nft-img:hover {
+  cursor: pointer;
+  z-index: -1;
+  background-image: url("/images/icon-view.svg"),
+    url("./images/image-equilibrium.jpg");
+}
+
+.card-component {
+  max-width: 20rem;
+  padding: 1.6rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nft-img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.sell-info {
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft-price,
+.nft-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nft-price {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-time {
+  color: hsl(215, 51%, 70%);
+}
+
+.seller-info {
+  border-top: solid 1px hsl(215, 32%, 27%);
+  padding-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.seller-info p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.seller-avatar {
+  border: solid 1px hsl(0, 0%, 100%);
+  border-radius: 500px;
+  height: 32px;
+}
+
+.user-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+
+/* ************************************************* */
+/* Queries *
+/* ************************************************* */
+
+/* above 375px */
+@media (min-width: 28.125em) {
+}
