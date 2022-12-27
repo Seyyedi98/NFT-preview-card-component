@@ -68,10 +68,8 @@ p {
   opacity: 0;
   background-color: hsla(178, 100%, 50%, 0.696);
   border-radius: 10px;
-}
-
-.overly-icon {
-  transform: translate(8.5rem, 8.5rem);
+  display: grid;
+  place-content: center;
 }
 
 .image-section:hover .overlay {
